@@ -1,14 +1,11 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "CommonJS",
+    "target": "esnext",
+    "module": "commonjs",
     "strict": true,
-    "moduleResolution": "Node",
     "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
-    "resolveJsonModule": true,
-    "types": ["@playwright/test"]
-  },
-  "include": ["tests", "pages"]
+    "forceConsistentCasingInFileNames": true,
+    "types": ["node"]
+  }
 }
