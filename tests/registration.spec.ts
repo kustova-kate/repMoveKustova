@@ -47,6 +47,7 @@ test.describe('Registration Form',  () => {
         await expect(page).toHaveURL(/.*sign-in/);
 
         //duplicated registration
+        await regPage.openSignUpForm();
         await regPage.signUp('Kateryna', 'Kustova', 'AQA', 'Distributor', uniqueEmail, '+380', '993453322', password);
         await expect(regPage.errorSignUpMessage).toBeVisible();
     });
