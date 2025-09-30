@@ -44,7 +44,7 @@ test.describe('Log in Form',  () => {
     });
 
     
-    test.only('Success reset password', async ({page})=>{
+    test('Success reset password', async ({page})=>{
         await regPage.sendForgotPassword(userEmail as string);
         await expect(regPage.successResetPassword).toContainText(`The link with instruction was sent to ${userEmail}`);
         
